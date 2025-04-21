@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF3E0;
+    color: #1C1C1C;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+main {
+    flex: 1;
+  }
+
+.navbar, footer {
+    background-color: #1C1C1C !important;
+    color: #FFFFFF;
+  }
+
+.navbar .nav-link {
+    color: #FFFFFF !important;
+  }
+
+.btn-primary, .btn-outline-dark {
+    background-color: #FFA64D;
+    border-color: #FFA64D;
+    color: #1C1C1C;
+  }
+
+.btn-primary:hover, .btn-outline-dark:hover {
+    background-color: #ff922b;
+    border-color: #ff922b;
+    color: #fff;
+  }
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #FFDAB9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+
+.card-title {
+    color: #1C1C1C;
+  }
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+a#made {
+    color: #fff;
+  }
+
+a#made:hover {
+    text-decoration: underline;
+    color: red;
+  }
+
+  .footer-policies {
+    padding: 30px 0;
+  }
+  
+  .policy-links a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+  }
+  
+  .policy-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .policy-section {
+    background-color: #fff3e0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ffd7a2;
+  }
+
+  #typewriter-text::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: black;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .gradient-heading {
+    background: linear-gradient(90deg, #ff8a00, #e52e71, #bc7ee5);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s ease infinite;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 12px;
+  }
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, whitesmoke, #ff922b);
+  }
+
+::-webkit-scrollbar-thumb {
+  background: whitesmoke;
+  border-radius: 10px;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff922b;
+  }
