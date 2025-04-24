@@ -85,20 +85,43 @@ main {
     color: #fff;
   }
 
-.card {
-    background-color: #ffffff;
-    border: 1px solid #FFDAB9;
+ .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    perspective: 1000px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    background: #fff;
   }
-
-.card:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    z-index: 2;
+  
+  .card:hover {
+    transform: rotateY(5deg) scale(1.03);
+    box-shadow: 0 10px 30px rgba(255, 105, 0, 0.4);
   }
-
-.card-title {
-    color: #1C1C1C;
+  
+  /* Button Pulse on Hover */
+  .card .btn {
+    transition: all 0.3s ease;
+  }
+  
+  .card .btn:hover {
+    animation: pulse 0.8s infinite;
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 
 footer {
